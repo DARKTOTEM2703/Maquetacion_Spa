@@ -64,6 +64,24 @@
   text-transform: uppercase;
   margin-right: 20%;
 }
+.button-1:hover {
+  animation: pulse 0.5s ease-in-out infinite,
+    glow 1.5s ease-in-out infinite alternate;
+  transform: scale(1.15); /* Aumenta ligeramente el tamaño */
+  background: linear-gradient(45deg, #ff3281, #ff7eb3); /* Degradado dinámico */
+  color: #ffffff; /* Cambia el texto a blanco */
+  box-shadow: 0 0 15px #ff3281, 0 0 30px #ff7eb3, 0 0 45px #ff3281; /* Brillo más intenso */
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #ff3281, 0 0 10px #ff3281, 0 0 15px #ff3281;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff3281, 0 0 30px #ff3281, 0 0 40px #ff3281;
+  }
+}
 .button-1:last-child {
   margin: 0;
 }
