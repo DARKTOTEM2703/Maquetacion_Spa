@@ -403,7 +403,7 @@
 
 .video iframe {
   width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: 300px; /* Altura fija para mantener proporción */
+  height: 335px; /* Altura fija para mantener proporción */
   max-width: 100%; /* Asegura que no se desborde */
   border-radius: 10px; /* Bordes redondeados */
   border: none; /* Elimina el borde del iframe */
