@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pink-bar {
+  background-color: #ff3281;
+  height: 0.5rem;
+}
+.container-1 {
+  display: inline-block;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  height: 11rem;
+  width: 100%;
+  border: 1px solid #000000;
+  background-color: #fff9f1;
+  animation: fadeInDown 1s ease-in-out;
+}
+.logo {
+  display: inline-block;
+  justify-content: center;
+  /* border: 1px solid #000000; */
+  height: 6rem;
+  width: 7.2rem;
+  animation: fadeInLeft 1s ease-in-out;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+.social-container {
+  display: inline-block;
+  margin-top: 1rem;
+  float: right;
+  /* border: 1px solid #000000; */
+  animation: fadeInRight 1s ease-in-out;
+}
+.social-icons:last-child {
+  margin: 0;
+}
+.social-icons {
+  display: inline-block;
+  margin-right: 1rem;
+  justify-content: center;
+  /* border: 1px solid #000000; */
+  height: 3rem;
+  width: 3rem;
+}
+.button-container {
+  text-align: center;
+  margin: auto;
+  padding: 0.5rem 5rem;
+  width: 100%;
+  display: block;
+  margin-top: 0.5rem;
+  border: 2px solid #000000;
+  animation: fadeInUp 1s ease-in-out;
+}
+.button-1 {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  margin-right: 20%;
+}
+.button-1:last-child {
+  margin: 0;
+}
+
+.container-2 {
+  background-image: url("../img/fondopiedras.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  height: 30rem; /* Ajusta la altura según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.promo-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.promo-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 30rem; /* Mantiene el ancho máximo */
+  margin-left: auto; /* Centra horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
+  text-align: center; /* Asegura que el texto esté centrado */
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.promo-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  animation: fadeInUp 1.6s ease-in-out;
+}
+
+.promo-button {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.pink-button {
+  background-color: #ff3281;
+  color: #ffffff;
+  border: none;
+}
+
+.pink-button:hover {
+  background-color: #e02a6f;
+}
+
+.outline-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ff3281;
+}
+
+.outline-button:hover {
+  background-color: #ffffff;
+  color: #ff3281;
+}
+
+/* Animación de entrada desde abajo */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de entrada desde la izquierda */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación de entrada desde la derecha */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container-1 {
+    display: flex; /* Asegura que los elementos estén en línea */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .logo {
+    height: 4rem;
+    width: 6rem;
+  }
+
+  .social-container {
+    display: flex; /* Asegura que los íconos estén en línea */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espaciado entre los íconos */
+    margin-top: 0; /* Elimina el margen superior */
+    float: none; /* Elimina el flotado */
+  }
+
+  .social-icons {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0; /* Elimina el margen derecho */
+  }
+
+  .button-container {
+    display: flex; /* Cambia a flexbox */
+    flex-wrap: wrap; /* Permite que los botones se ajusten si no caben en una fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    gap: 1rem; /* Espaciado uniforme entre los botones */
+    padding: 1rem; /* Ajusta el padding */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    border: none; /* Elimina el borde */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .button-1 {
+    margin: 0; /* Elimina márgenes adicionales */
+    font-size: 1rem; /* Ajusta el tamaño de fuente */
+    flex: 1 1 auto; /* Permite que los botones se ajusten automáticamente */
+    text-align: center; /* Centra el texto dentro de los botones */
+    max-width: 150px; /* Limita el ancho máximo de los botones */
+  }
+
+  .promo-content {
+    padding: 1rem; /* Ajusta el padding para evitar que el contenido se vea comprimido */
+  }
+
+  .promo-content h1 {
+    font-size: 2rem; /* Reduce el tamaño del título */
+    text-align: center; /* Centra el título */
+  }
+
+  .promo-content p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+    max-width: 90%; /* Asegura que el texto no ocupe todo el ancho */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+
+  .promo-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si no caben en una fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 1rem; /* Espaciado uniforme entre los botones */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  }
+
+  .promo-button {
+    width: auto; /* Ajusta el ancho automáticamente */
+    padding: 0.8rem 1.5rem; /* Ajusta el padding interno */
+    text-align: center; /* Centra el texto dentro del botón */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (como móviles) */
+@media (max-width: 480px) {
+  .container-1 {
+    padding: 0.5rem;
+  }
+
+  .logo {
+    height: 3rem;
+    width: 5rem;
+  }
+
+  .social-icons {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .button-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .button-1 {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .button-container {
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 0.5rem; /* Reduce el espaciado entre los botones */
+    padding: 0.5rem; /* Ajusta el padding */
+  }
+
+  .button-1 {
+    font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    max-width: 100%; /* Asegura que los botones ocupen todo el ancho */
+  }
+
+  .promo-content h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .promo-content p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    max-width: 100%; /* Asegura que el texto no ocupe todo el ancho */
+  }
+
+  .promo-buttons {
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 0.5rem; /* Reduce el espaciado entre los botones */
+  }
+
+  .promo-button {
+    width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
+    max-width: 300px; /* Limita el ancho máximo */
+  }
+}
