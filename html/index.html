@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página base para un proyecto web">
-    <meta name="author" content="Tu Nombre">
-    <title>Página Base</title>
-    <link rel="stylesheet" href="../css/styles.css"> <!-- Ruta al archivo CSS -->
+    <meta name="description"
+        content="Spa Salon: Un lugar para consentirte con servicios de spa y estética personalizados.">
+    <meta name="keywords" content="spa, estética, promociones, masajes, belleza">
+    <meta name="author" content="Spa Salon">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval';">
+    <title>Spa Salon - Promociones y Servicios</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -89,10 +92,12 @@
             <p>Un lugar para consentirte de pies a cabeza<br>Servicio de salón estético y Spa personalizado</p>
             <p><strong>TELEFONO:</strong> 999 420 8871<br><strong>CORREO:</strong> info@spasalon.com</p>
             <fieldset>
-                <form action="#" method="post">
+                <form action="#" method="post" aria-label="Formulario de suscripción a promociones">
                     <label for="email">Tu dirección de correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="tunombre@example.com" required>
-                    <button type="submit">Enviar</button>
+                    <input type="email" id="email" name="email" placeholder="tunombre@example.com" required
+                        aria-required="true" aria-describedby="emailHelp" />
+                    <small id="emailHelp">Nunca compartiremos tu correo con terceros.</small>
+                    <button type="submit" aria-label="Enviar formulario">Enviar</button>
                 </form>
             </fieldset>
         </div>
@@ -134,7 +139,7 @@
             <p>&copy; 2025 Spa Salon. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="../js/scripts.js"></script> <!-- Ruta al archivo JS -->
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>
